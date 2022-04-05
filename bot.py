@@ -34,7 +34,7 @@ def check_reboot_required():
                 data = file.read()
                 file.close()
                 send("Reboot is required due to\n" + data)
-            sleep(3600)
+            sleep(86400)
         except Exception as exception:
             send("Error while checking for reboot required: " + str(exception))
 
