@@ -15,3 +15,5 @@ ENTRYPOINT [ "/entrypoint.sh" ]
 
 # docker build -t sonn567/ubuntu-server-system-restart-info-telegram-bot:TAG .
 # docker push sonn567/ubuntu-server-system-restart-info-telegram-bot:TAG
+# docker manifest create sonn567/ubuntu-server-system-restart-info-telegram-bot --amend sonn567/ubuntu-server-system-restart-info-telegram-bot:1.1.0.amd64 --amend sonn567/ubuntu-server-system-restart-info-telegram-bot:1.1.0.arm64v8
+# docker manifest push sonn567/ubuntu-server-system-restart-info-telegram-bot:latest
