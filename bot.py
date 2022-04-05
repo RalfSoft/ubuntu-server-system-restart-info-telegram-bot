@@ -4,6 +4,7 @@ import requests, os, sys
 
 API_KEY = str(os.getenv('TELEGRAM_BOT_API_KEY'))
 CHAT_ID = os.getenv('TELEGRAM_CHAT_ID')
+SLEEP_CHECK_REBOOT_REQUIRED = os.getenv('SLEEP_CHECK_REBOOT_REQUIRED')
 
 #Check if the Telegram API-Key is valid (make sure that Token isn't used by another script)
 def check_API_KEY():
@@ -34,7 +35,7 @@ def check_reboot_required():
                 data = file.read()
                 file.close()
                 send("Reboot is required due to\n" + data)
-            sleep(86400)
+            sleep(SLEEP_CHECK_REBOOT_REQUIRED)
         except Exception as exception:
             send("Error while checking for reboot required: " + str(exception))
 

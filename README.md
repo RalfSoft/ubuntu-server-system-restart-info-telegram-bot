@@ -15,7 +15,7 @@ build: ./
 ``` 
 instead of 
 ```
-image: sonn567/ubuntu-server-system-restart-info-telegram-bot:1.0.0
+image: sonn567/ubuntu-server-system-restart-info-telegram-bot:TAG
 ```
 in the ```docker-compose.yml```.
 Now run ```docker-compose up -d``` and the docker image will be built for your system.

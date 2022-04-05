@@ -13,5 +13,5 @@ RUN python3.9 -m pip install -r /tmp/requirements.txt
 
 ENTRYPOINT [ "/entrypoint.sh" ]
 
-# docker build -t sonn567/ubuntu-server-system-restart-info-telegram-bot:1.0.0 .
-# docker push sonn567/ubuntu-server-system-restart-info-telegram-bot:1.0.0
+# docker build -t sonn567/ubuntu-server-system-restart-info-telegram-bot:TAG .
+# docker push sonn567/ubuntu-server-system-restart-info-telegram-bot:TAG
